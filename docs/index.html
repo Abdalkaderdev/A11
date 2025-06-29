@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A11</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<!-- Scene List Navigation -->
+<nav id="sceneList" aria-label="Scene list">
+  <ul class="scenes">
+    <li><button class="scene" data-id="0-bathroom" aria-label="Go to bathroom">bathroom</button></li>
+    <li><button class="scene" data-id="1-kitchen" aria-label="Go to kitchen">kitchen</button></li>
+    <li><button class="scene" data-id="2-hall" aria-label="Go to hall">hall</button></li>
+    <li><button class="scene" data-id="3-balcony" aria-label="Go to balcony">balcony</button></li>
+    <li><button class="scene" data-id="4-room" aria-label="Go to room">room</button></li>
+    <li><button class="scene" data-id="5-edition-view-" aria-label="Go to edition view">edition view</button></li>
+    <li><button class="scene" data-id="6-bathroom2" aria-label="Go to bathroom2">bathroom2</button></li>
+    <li><button class="scene" data-id="7-master-bathroom" aria-label="Go to master bathroom">master bathroom</button></li>
+    <li><button class="scene" data-id="8-master-room" aria-label="Go to master room">master room</button></li>
+    <li><button class="scene" data-id="9-balcony" aria-label="Go to balcony">balcony.</button></li>
+  </ul>
+</nav>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<!-- Controls: Use <button> for accessibility -->
+<button id="autorotateToggle" aria-label="Toggle autorotate">
+  <img class="icon off" src="img/play.png" alt="Start autorotate">
+  <img class="icon on" src="img/pause.png" alt="Pause autorotate">
+</button>
+
+<button id="fullscreenToggle" aria-label="Toggle fullscreen">
+  <img class="icon off" src="img/fullscreen.png" alt="Enter fullscreen">
+  <img class="icon on" src="img/windowed.png" alt="Exit fullscreen">
+</button>
+
+<button id="sceneListToggle" aria-label="Toggle scene list">
+  <img class="icon off" src="img/expand.png" alt="Expand scene list">
+  <img class="icon on" src="img/collapse.png" alt="Collapse scene list">
+</button>
+
+<!-- View Control Buttons -->
+<button id="viewUp" class="viewControlButton viewControlButton-1" aria-label="Look up">
+  <img class="icon" src="img/up.png" alt="Look up">
+</button>
+<button id="viewDown" class="viewControlButton viewControlButton-2" aria-label="Look down">
+  <img class="icon" src="img/down.png" alt="Look down">
+</button>
+<button id="viewLeft" class="viewControlButton viewControlButton-3" aria-label="Look left">
+  <img class="icon" src="img/left.png" alt="Look left">
+</button>
+<button id="viewRight" class="viewControlButton viewControlButton-4" aria-label="Look right">
+  <img class="icon" src="img/right.png" alt="Look right">
+</button>
+<button id="viewIn" class="viewControlButton viewControlButton-5" aria-label="Zoom in">
+  <img class="icon" src="img/plus.png" alt="Zoom in">
+</button>
+<button id="viewOut" class="viewControlButton viewControlButton-6" aria-label="Zoom out">
+  <img class="icon" src="img/minus.png" alt="Zoom out">
+</button>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
